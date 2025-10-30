@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+EventBus scripts from adammyhre (git-amend)
+https://youtu.be/4_DTAnigmaQ?si=BF7lhOKeQxVikpJO
+
+GitHub project page: https://github.com/adammyhre/Unity-Event-Bus
+*/
+using System;
 using System.Reflection;
 using System.Collections.Generic;
 using UnityEditor;
