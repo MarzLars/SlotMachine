@@ -8,7 +8,6 @@ public class ButtonReelRoll : MonoBehaviour
     public void RaiseColumnRollEvent()
     {
         EventBus<ColumnRollEvent>.Raise(new ColumnRollEvent {ColumnIndex = columnIndex});
-        
     }
     
     public void RaiseRowRollEvent()

@@ -9,8 +9,6 @@ namespace EventBus
 {
     public interface IEvent { }
 
-    public struct TestEvent : IEvent { }
-
     public struct ColumnRollEvent : IEvent {
         public int ColumnIndex;
     }

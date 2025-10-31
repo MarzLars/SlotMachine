@@ -7,8 +7,8 @@ public class IconUpdater : MonoBehaviour
     public Image iconImage;
     public List<Sprite> iconSprites;
 
-    public void UpdateSprite()
+    public void UpdateSprite(int slotValue)
     {
-        
+        iconImage.sprite = iconSprites[slotValue];
     }
 }
