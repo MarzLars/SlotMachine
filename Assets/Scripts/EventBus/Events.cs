@@ -15,4 +15,11 @@ namespace EventBus
     public struct RowRollEvent : IEvent {
         public int RowIndex;
     }
+    public struct RollCompleteEvent : IEvent {
+    }
+    public struct WinEvent : IEvent {
+        public int WinAmount;
+    }
+    public struct LoseEvent : IEvent {
+    }
 }
