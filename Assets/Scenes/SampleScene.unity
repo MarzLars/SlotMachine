@@ -3424,6 +3424,7 @@ GameObject:
   - component: {fileID: 428246513}
   - component: {fileID: 428246512}
   - component: {fileID: 428246514}
+  - component: {fileID: 428246515}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -3525,6 +3526,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70afba26246ee0b47813da8abae88544, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RowAndColumnStateSetup
+--- !u!114 &428246515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428246510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10249d208589f8a469695097861e5b6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  gridSize: 5
+  wildcardValue: -1
+  enableWildcards: 0
+  rowMatchMultiplier: 5
+  columnMatchMultiplier: 5
+  diagonalMatchMultiplier: 10
+  clusterMultiplier: 2
+  cornerMatchMultiplier: 15
+  xPatternMultiplier: 20
+  plusPatternMultiplier: 12
+  framePatternMultiplier: 18
+  minClusterSize: 4
+  playerCredit: {fileID: 624718873}
 --- !u!1 &439204524
 GameObject:
   m_ObjectHideFlags: 0
@@ -4816,6 +4842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   credits: 10000
   betAmount: 100
+  minBetAmount: 10
   creditDisplay: {fileID: 1244109731}
 --- !u!1 &643405918
 GameObject:
