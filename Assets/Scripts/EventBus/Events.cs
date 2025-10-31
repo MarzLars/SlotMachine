@@ -4,11 +4,17 @@ https://youtu.be/4_DTAnigmaQ?si=BF7lhOKeQxVikpJO
 
 GitHub project page: https://github.com/adammyhre/Unity-Event-Bus
 */
-public interface IEvent { }
 
-public struct TestEvent : IEvent { }
+namespace EventBus
+{
+    public interface IEvent { }
 
-public struct PlayerEvent : IEvent {
-    public int health;
-    public int mana;
+    public struct TestEvent : IEvent { }
+
+    public struct ColumnRollEvent : IEvent {
+        public int ColumnIndex;
+    }
+    public struct RowRollEvent : IEvent {
+        public int RowIndex;
+    }
 }
