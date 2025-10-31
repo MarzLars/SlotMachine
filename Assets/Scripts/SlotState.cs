@@ -9,8 +9,12 @@ public class SlotState : MonoBehaviour
     EventBinding<ColumnRollEvent> _columnRollBinding;
     EventBinding<RowRollEvent> _rowRollBinding;
     
+    IconUpdater _iconUpdater;
+    
     void Start()
     {
+        _iconUpdater = GetComponent<IconUpdater>();
+        
         //Subscribe to Events
         EventBus<ColumnRollEvent>.Register(_columnRollBinding);
         EventBus<RowRollEvent>.Register(_rowRollBinding);
@@ -25,6 +29,8 @@ public class SlotState : MonoBehaviour
 
     void UpdateSlotState()
     {
-    
+        
+        
+        _iconUpdater.UpdateSprite();
     } 
 }
